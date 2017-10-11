@@ -81,3 +81,10 @@ You may serve it with a static server:
 Done in 19.07s.
 ```
 Copy the contents of the `build/` folder to your webserver root
+
+## API requirements
+| type | endpoint | descripton |
+| ---- | -------- | ---------- |
+| GET | /bars   | return list of bars. Be able to pass lat/long and a radius in miles |
+| GET| /bars/{id}/drinks | return list of drinks and prices based on a bar ID |
+| POST | /orders | Send data for round ordered, including pub ID, drink ID, price paid, date/time |
